@@ -1,0 +1,49 @@
+.DynamicCells {
+  input:disabled, textarea:disabled {
+    color: rgba(0, 0, 0, 0.84);
+  }
+  .noToolBar {
+    .ql-toolbar {
+      display: none;
+    }
+  }
+  .custom-editing-area {
+    img {
+      //width: 80px;
+      //height: 80px;
+      margin-right: 8px;
+    }
+  }
+  .weui-cell__hd {
+    width: 80px;
+  }
+
+  .weui-cell__bd {
+    padding-left: 8px;
+  }
+  .TextArea_Body {
+    padding: 5px;
+    border-radius:5px;border:1px solid red;
+  }
+  .cell_body_head{
+    width: 10px;
+    height: 10px;
+    // margin-right: 12px;
+    float: right;
+  }
+  .cell_body_content{
+    // padding-left: 10px;
+  }
+  .isRequire {
+    font-size: 27px;
+    line-height: 1.2;
+    padding:0;
+    color: red;
+  }
+
+  .ql-toolbar.ql-snow + .ql-container.ql-snow{
+    border-top-color: rgb(204, 204, 204);
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+}

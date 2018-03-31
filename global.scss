@@ -1,0 +1,189 @@
+html, body, #root {
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+.Application {
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+
+  .weui-search-bar__form {
+    border-radius: 5px;
+  }
+  .weui-search-bar {
+    background-color: #FFFFFF;
+  }
+  .weui-search-bar__label {
+    background-color: #EEEEEE;
+  }
+  .weui-search-bar_focusing {
+    .weui-search-bar__box {
+      background-color: #EEEEEE;
+    }
+  }
+  .weui-search-bar__cancel-btn{
+    color: #338BDB;
+  }
+  .weui-panel__bd{
+    margin-top: 10px;
+    margin-bottom: 6px;
+    .weui-cell{
+      padding-top: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 4px;
+
+    }
+  }
+
+  .weui-popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 100%);
+    backface-visibility: hidden;
+    z-index: 5000;
+    width: 100%;
+    background-color: #EFEFF4;
+    //slide up animation
+    transition: transform .3s;
+  }
+
+  //popup aniamtion
+  .weui-popup_toggle{
+    transform: translate(0, 0);
+  }
+
+  .weui-popup__hd {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #fbf9fe;
+    position: relative;
+    text-align: center;
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid #E5E5E5;
+      color: #E5E5E5;
+      transform-origin: 0 100%;
+      transform: scaleY(0.5);
+    }
+  }
+
+  .weui-popup__action {
+    display: block;
+    flex: 1;
+    color: #586C94;
+
+    &:first-child {
+      text-align: left;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  .primary{
+    background-color: #398dd8;
+  }
+}
+
+//选择组件主题色修改
+.weui-cells_radio .weui-check:checked + .weui-icon-checked:before{
+  color: #398dd8;
+}
+
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+  color: #398dd8;
+}
+
+.weui-dialog__btn_primary{
+  color: #398dd8;
+}
+
+.page-actions{
+
+}
+
+
+.weui-cells {
+  margin-top: 0;
+}
+.weui_panel {
+  margin-top: 0.85em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+  &_hd {
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 1.41176471;
+  }
+  &_hd:after {
+    left: 0;
+  }
+  &_ft {
+    font-size: 17px;
+    line-height: 1.41176471;
+    padding-bottom: 10px;
+  }
+}
+
+.weui_cells_title + .weui_cells {
+  margin-top: 0;
+}
+
+.weui_cells_title {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.weui_cell:before {
+  left: 0;
+}
+
+// 解决选择组件错误图片位置
+.weui_cell_select.weui_select_after.weui_cell_warn {
+
+  .weui_cell_bd:after {
+    right: 55px;
+  }
+
+  .weui_icon_warn:before {
+    margin-right: 15px;
+  }
+}
+.weui_cell_select.weui_cell_warn {
+
+  .weui_cell_bd:after {
+    right: 50px;
+  }
+
+  .weui_icon_warn:before {
+    margin-right: 15px;
+  }
+}
+
+.weui-toptips_default{
+  background-color: #B2B2B2;
+}
+.weui-toptips_info{
+  background-color: #586C94;
+}
+.weui-toptips_primary{
+  background-color: #398dd8;
+}
+$body-bg:    #EEEEEE !default;
+$page-bg:    $body-bg !default;

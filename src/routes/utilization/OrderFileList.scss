@@ -1,0 +1,31 @@
+.OrderFileList {
+
+  .weui-cell__bd {
+    margin-left: 8px;
+    margin-right: 8px;
+    word-break: break-all;
+  }
+
+  .weui-gallery__img {
+    touch-action: none;
+  }
+
+  .action_btn_area {
+    width: 100%;
+    height: 48px;
+    line-height:48px;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .action_btn_positive_fill {
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    color: white;
+    background-color: #338bdb;
+    position: relative;
+  }
+
+}

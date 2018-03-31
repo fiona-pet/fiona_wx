@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="28" cy="28" r="28"></circle>
+        <filter x="-29.5%" y="-24.1%" width="158.9%" height="158.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.482605707   0 0 0 0 0.658847388   0 0 0 0 0.902901786  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="首页-工程师" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应用" transform="translate(-281.000000, -528.000000)">
+            <g id="btn-add" transform="translate(291.000000, 535.000000)">
+                <g id="btn-bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#338BDB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+.page-actions {
+  display: flex;
+  position: relative;
+  background-color: #F8F8F8;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: center;
+
+  a {
+    position: relative;
+    display: block;
+    flex: 1;
+    color: #353535;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:active {
+      background-color: #EEEEEE;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      border-left: 1px solid #d5d5d6;
+      color: #d5d5d6;
+      transform-origin: 0 0;
+      transform: scaleX(.5);
+    }
+    &.primary {
+      color: #FFFFFF;
+      background-color: #398dd8;
+    }
+  }
+
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+  }
+}

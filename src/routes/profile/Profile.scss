@@ -1,0 +1,42 @@
+.Profile {
+  background-color: #f8f8f8;
+  .avatar {
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+    border-radius: 50%;
+  }
+  .logout {
+    text-align: center;
+  }
+  .profileTitle {
+    margin-bottom: 3px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .name {
+      font-size: 18px;
+    }
+    display: flex;
+    flex-direction: row;
+  }
+  .department {
+    opacity: 0.54;
+    font-size: 14px;
+  }
+  .weui-cells {
+    margin-top: 12px;
+  }
+  .weui-cell {
+    padding-top: 12px;
+    padding-bottom: 11px;
+  }
+  .logout-cells {
+    margin-top: 24px;
+  }
+  .logout-cell {
+    padding-top: 12px;
+    padding-bottom: 11px;
+  }
+}

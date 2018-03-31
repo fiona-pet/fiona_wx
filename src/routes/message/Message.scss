@@ -1,0 +1,56 @@
+.Message {
+  background-color: white;
+  .weui-cell{
+    .weui-cell__hd {
+      margin-right: 2px;
+    }
+    padding: 12px;
+  }
+  .weui-cell:before{
+    left:72px;
+  }
+  .weui-cells:after{
+    border: none;
+  }
+
+  .weui-badge {
+    position: absolute;
+    margin: 0 -32px;
+    background-color: #D94040;
+    letter-spacing: 0;
+  }
+  img {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+  .item-hd {
+    display: flex;
+    flex-direction: row;
+    .type {
+      flex: 1;
+      font-size: 18px;
+      opacity: 0.84;
+    }
+    .time {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.28);
+    }
+
+  }
+  .content {
+    font-size: 14px;
+    opacity: 0.48;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 3px;
+  }
+
+  .weui-cell__ft {
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.28);
+  }
+}

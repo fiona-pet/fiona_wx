@@ -1,0 +1,37 @@
+.SubmitFrom {
+  padding-bottom: 64px;
+
+  height: 100%;
+
+  .container2 {
+    bottom: 100px;
+  }
+  .container1 {
+    bottom: 50px;
+  }
+  .weui-cells__title {
+    padding: 0;
+    .weui-cell {
+      padding: 4px 15px;
+    }
+    .weui-cell__ft {
+      color: rgba(0,0,0,0.84);
+    }
+  }
+  .cell_body_content{
+    font-size: 16px;
+    width: 80px;
+    color: rgba(0,0,0,0.87);
+  }
+  .DynamicCell .weui-cell__bd {
+    padding-left: 8px;
+  }
+  .weui-cell__bd{
+    font-size: 16px;
+    color: rgba(0,0,0,0.84);  
+  }
+  .weui-input{
+    font-size: 16px;
+    color: rgba(0,0,0,0.84); 
+  }
+}

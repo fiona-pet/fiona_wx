@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="微信月报" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="尾页" transform="translate(-53.000000, -308.000000)">
+            <g id="Group-2-Copy" transform="translate(53.000000, 308.000000)">
+                <g id="mail">
+                    <circle id="Oval" fill="#2669A6" cx="20" cy="20" r="20"></circle>
+                    <g id="邮件" transform="translate(10.000000, 14.000000)" fill-rule="nonzero" fill="#FFFFFF" opacity="0.479999989">
+                        <path d="M10.0012953,7.09657102 L0,3.55970615 L0,12.6088916 C0,12.823948 0.186550559,13 0.415807935,13 L19.5849872,13 C19.8142702,13 20,12.823948 20,12.6088916 L20,3.55970615 L10.0012953,7.09657102 Z M19.5849872,0 L0.415807935,0 C0.186550559,0 0,0.176003633 0,0.391084235 L0,1.75435021 L10.0012953,5.29116669 L19.9999744,1.75432601 L19.9999744,0.391060038 C19.9999744,0.176003633 19.8142702,0 19.5849872,0 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

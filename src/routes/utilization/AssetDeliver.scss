@@ -1,0 +1,35 @@
+.AssetDeliver {
+  .weui-toptips {
+    padding: 0;
+  }
+  .weui-cells {
+    margin-top: 12px;
+  }
+
+  .weui_btn_primary {
+    color: white;
+    border: none;
+    background-color: #338bdb;
+  }
+
+  .list_placeholder {
+    color: #808080;
+  }
+
+  .cell_body_head{
+    width: 10px;
+    height: 10px;
+    // margin-right: 12px;
+    float: right;
+  }
+  .cell_body_content{
+    // padding-left: 10px;
+  }
+  .isRequire {
+    font-size: 27px;
+    line-height: 1.2;
+    padding:0;
+    color: red;
+  }
+
+}

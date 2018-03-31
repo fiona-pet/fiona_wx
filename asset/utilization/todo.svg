@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>bill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页-工程师" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应用" transform="translate(-12.000000, -76.000000)">
+            <g id="chatgroup-copy-4" transform="translate(0.000000, 64.000000)">
+                <g id="bill" transform="translate(12.000000, 12.000000)">
+                    <rect id="Rectangle-4" fill="#EF9721" x="0" y="0" width="40" height="40" rx="4"></rect>
+                    <g id="Group-5" transform="translate(4.000000, 4.000000)">
+                        <g id="tab_ico_profile">
+                            <g id="Group-2" transform="translate(5.333333, 2.666667)">
+                                <path d="M0.666666667,26 L1.19041596,26 L4.57853637,23.3106165 L7.6202187,25.8044413 L10.6665049,23.3049294 L13.7151236,25.8044413 L16.7546352,23.3104881 L20.1429174,26 L20.6666667,26 L20.6666667,3.33268242 C20.6666667,1.84740064 19.586623,0.666666667 18.2847146,0.666666667 L3.04861869,0.666666667 C1.74671037,0.666666667 0.666666667,1.84740064 0.666666667,3.33268242 L0.666666667,26 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.33333333"></path>
+                                <path d="M5.33333333,8 L16,8 L16,9.33333333 L5.33333333,9.33333333 L5.33333333,8 Z M5.33333333,16 L16,16 L16,17.3333333 L5.33333333,17.3333333 L5.33333333,16 Z M5.33333333,12 L16,12 L16,13.3333333 L5.33333333,13.3333333 L5.33333333,12 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

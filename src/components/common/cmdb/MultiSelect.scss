@@ -1,0 +1,18 @@
+.MultiSelect {
+  .page-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .react-weui-infiniteloader {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

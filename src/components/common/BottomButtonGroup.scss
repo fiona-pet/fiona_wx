@@ -1,0 +1,50 @@
+.action_btn_area {
+  width: 100%;
+  height: 48px;
+  line-height:48px;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.action_btn_negative_fill {
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.action_btn_positive_fill {
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  color: white;
+  background-color: #338bdb;
+  position: relative;
+}
+
+.action_btn_negative {
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  background-color: #e6e6e6;
+  float: left;
+  position: relative;
+}
+
+.action_btn_positive {
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  color: white;
+  background-color: #338bdb;
+  color: #FFFFFF;
+  float: right;
+  position: relative;
+}
+
+.icon {
+  vertical-align: middle;
+  padding-bottom: 5px;
+}

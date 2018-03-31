@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>asset-rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页-工程师" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应用-创建工单" transform="translate(-12.000000, -204.000000)">
+            <g id="chatgroup-copy-5" transform="translate(0.000000, 192.000000)">
+                <g id="asset-rectangle" transform="translate(12.000000, 12.000000)">
+                    <rect id="Rectangle-4" fill="#1C9CDD" x="0" y="0" width="40" height="40" rx="4"></rect>
+                    <g id="Group-4" transform="translate(4.000000, 4.000000)">
+                        <g id="资产负债表">
+                            <rect id="Rectangle-126" fill="#F3F3F3" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                            <path d="M16,8.83333333 L26,16.3333333 L26,26.6699405 C26,27.0377821 25.7041742,27.3333333 25.3321711,27.3333333 L6.66782888,27.3333333 C6.29832908,27.3333333 6,27.0360586 6,26.6699405 L6,16.3333333 L16,8.83333333 Z" id="Rectangle-3" stroke="#FFFFFF" stroke-width="1.33333333"></path>
+                            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="1.33333333" stroke-linecap="round" stroke-linejoin="round" points="13.3333333 16.3333333 16 19 18.6666667 16.3333333"></polyline>
+                            <rect id="Rectangle" fill="#FFFFFF" x="12" y="18.6666667" width="8" height="1.33333333" rx="0.666666667"></rect>
+                            <rect id="Rectangle-Copy" fill="#FFFFFF" x="12" y="21.3333333" width="8" height="1.33333333" rx="0.666666667"></rect>
+                            <path d="M15.3333333,18.6666667 L16.6666667,18.6666667 L16.6666667,24.669735 C16.6666667,25.0362302 16.3707568,25.3333333 16,25.3333333 L16,25.3333333 C15.6318102,25.3333333 15.3333333,25.0295571 15.3333333,24.669735 L15.3333333,18.6666667 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+                            <polyline id="Rectangle-3-Copy" stroke="#FFFFFF" stroke-width="1.33333333" stroke-linecap="round" stroke-linejoin="round" points="1.33333333 13.3333333 16 2.66666667 30.6666667 13.3333333"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,62 @@
+.AssetDetail {
+  padding-bottom: 32px;
+  .weui-cell__hd {
+    width: 70px;
+    color:rgba(0,0,0,0.48);
+    margin-right: 12px;
+  }
+  .weui-cell__bd{
+    color:rgba(0,0,0,0.84)
+  }
+  .State {
+    font-size: 14px;
+    color: #E75C20;
+  }
+  .weui_btn_primary:hover {
+    background-color: #338baa;
+  }
+
+  .weui_btn_primary {
+    color: white;
+    border: none;
+    background-color: #338bdb;
+  }
+
+  .weui-cell{
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+  }
+  .weui-cell:before{
+    left: 12px;
+  }
+  //.title:after{
+  //  content: " ";
+  //  position: absolute;
+  //  top: 45px;
+  //  right: 0;
+  //  height: 1px;
+  //  border-top: 1px solid #e5e5e5;
+  //  color: #e5e5e5;
+  //  -webkit-transform-origin: 0 0;
+  //  transform-origin: 0 0;
+  //  -webkit-transform: scaleY(.5);
+  //  transform: scaleY(.5);
+  //  left: 0px;
+  //  z-index: 2;
+  //}
+
+  .title{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 16px;
+  }
+
+  .title .weui-cell__hd {
+    color:rgba(0,0,0,0.84);
+    width:80%;
+    word-break: keep-all;
+  }
+}

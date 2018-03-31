@@ -1,0 +1,33 @@
+.AssetManage {
+  .wrapper {
+    margin-top: 50px;
+  }
+
+  .page-body {
+
+  }
+
+  .main {
+    text-align: center;
+
+    img {
+      width: 112px;
+      height: 112px;
+      margin-top: 80px;
+    }
+
+    .desc {
+      margin-top: 16px;
+      font-size: 18px;
+      color: rgba(0,0,0,0.54);
+    }
+
+    .scan-btn {
+      width: 112px;
+      margin-top: 16px;
+      background: #F8F8F8;
+      border: 0 solid #DDDDDD;
+      border-radius: 4px;
+    }
+  }
+}

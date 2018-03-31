@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>application_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页-工程师" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应用" transform="translate(-176.000000, -625.000000)">
+            <g id="tab" transform="translate(0.000000, 619.000000)">
+                <g id="application" transform="translate(176.000000, 6.000000)">
+                    <g id="application_1">
+                        <rect id="Rectangle-126" fill="#F3F3F3" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <g id="iconfont-gongzuotai" transform="translate(3.000000, 1.000000)" fill="#338BDB">
+                            <rect id="Rectangle" x="0" y="2" width="8" height="8" rx="2"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="12" width="8" height="8" rx="2"></rect>
+                            <rect id="Rectangle-Copy-2" x="10" y="12" width="8" height="8" rx="2"></rect>
+                            <rect id="Rectangle-Copy-3" transform="translate(14.000000, 6.000000) rotate(-315.000000) translate(-14.000000, -6.000000) " x="10" y="2" width="8" height="8" rx="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

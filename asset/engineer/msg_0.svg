@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>msg_0</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页-工程师" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我" transform="translate(-51.000000, -625.000000)">
+            <g id="tab" transform="translate(0.000000, 619.000000)">
+                <g id="Group-2" transform="translate(51.000000, 6.000000)">
+                    <g id="msg_0">
+                        <rect id="Rectangle-126" fill="#F3F3F3" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M10.2502776,19.9434908 C10.8200972,20.0182459 11.4045229,20.0570822 12,20.0570822 C18.0751322,20.0570822 23,16.0148667 23,11.0285411 C23,6.04221554 18.0751322,2 12,2 C5.92486775,2 1,6.04221554 1,11.0285411 C1,13.4885671 2.19870611,15.7187981 4.14285714,17.3472078 L4.14285714,20.6739806 C4.14285714,21.7820674 4.96149716,22.307193 5.97134079,21.855866 L10.2502776,19.9434908 Z" id="Oval-93" stroke-opacity="0.48" stroke="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

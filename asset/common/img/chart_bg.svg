@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="667px" viewBox="0 0 100% 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="103.080738%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#E9EBEE" offset="0%"></stop>
+            <stop stop-color="#101F30" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="微信月报" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="月报无数据页面-copy">
+            <g id="Group-2">
+                <rect id="Rectangle" fill="#15283D" x="0" y="0" width="100%" height="667"></rect>
+                <g id="Group" transform="translate(27.000000, 120.000000)">
+                    <circle id="Oval-2-Copy" fill="#CA9004" cx="313.5" cy="5.5" r="1.5"></circle>
+                    <circle id="Oval-2-Copy-6" fill="#EDEDED" cx="323.5" cy="86.5" r="1.5"></circle>
+                    <circle id="Oval-2-Copy-7" fill="#BA8F2E" cx="315" cy="168" r="1"></circle>
+                    <circle id="Oval-2-Copy-23" fill="#3495B6" cx="1" cy="281" r="1"></circle>
+                    <circle id="Oval-2-Copy-13" fill="#348BB6" cx="315" cy="357" r="1"></circle>
+                    <circle id="Oval-2-Copy-8" fill="#EDEDED" cx="321" cy="243" r="1"></circle>
+                    <circle id="Oval-2-Copy-18" fill="#EDEDED" cx="105" cy="442" r="1"></circle>
+                    <circle id="Oval-2-Copy-10" fill="#EDEDED" cx="320" cy="531" r="1"></circle>
+                    <circle id="Oval-2-Copy-19" fill="#EDEDED" cx="27" cy="395" r="1"></circle>
+                    <circle id="Oval-2-Copy-2" fill="#EDEDED" cx="97" cy="277" r="1"></circle>
+                    <circle id="Oval-2-Copy-3" fill="#348BB6" cx="210.5" cy="278.5" r="1.5"></circle>
+                    <circle id="Oval-2-Copy-4" fill="#EDEDED" cx="234.5" cy="212.5" r="1"></circle>
+                    <circle id="Oval-2-Copy-15" fill="#EDEDED" cx="290" cy="382" r="2"></circle>
+                    <path d="M267.331796,287.671725 C268.380686,287.671725 302.678583,289.498184 302.678583,288.449293 C302.678583,287.400403 267.648635,284.939674 266.599745,284.939674 C265.550855,284.939674 265.749806,285.3262 265.749806,286.375091 C265.749806,287.423981 266.282905,287.671725 267.331796,287.671725 Z" id="Oval-2-Copy-27" fill="url(#linearGradient-1)" transform="translate(284.206670, 286.856926) rotate(-30.000000) translate(-284.206670, -286.856926) "></path>
+                    <circle id="Oval-2-Copy-26" fill="#348BB6" cx="6" cy="2" r="2"></circle>
+                    <circle id="Oval-2-Copy-16" fill="#CA9004" cx="248" cy="470" r="1"></circle>
+                    <circle id="Oval-2-Copy-12" fill="#348BB6" cx="202.5" cy="403.5" r="1.5"></circle>
+                    <circle id="Oval-2-Copy-22" fill="#EDEDED" cx="3.5" cy="500.5" r="1.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#EDEDED" cx="29.5" cy="166.5" r="1.5"></circle>
+                    <circle id="Oval-2-Copy-9" fill="#EDEDED" cx="269" cy="295" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

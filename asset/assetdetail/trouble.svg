@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>trouble2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="资产管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="资产详情" transform="translate(-137.000000, -631.000000)">
+            <g id="float-button2" transform="translate(0.000000, 619.000000)">
+                <g id="按钮/灰色/可操作">
+                    <g id="Group" transform="translate(137.000000, 11.000000)">
+                        <g id="trouble2" transform="translate(0.000000, 1.000000)">
+                            <rect id="Rectangle-5" x="0" y="0" width="24" height="24"></rect>
+                            <g id="Group-5" transform="translate(3.000000, 3.000000)">
+                                <circle id="Combined-Shape" stroke-opacity="0.84" stroke="#000000" cx="9" cy="9" r="9"></circle>
+                                <path d="M8.5,3.5 L9.5,3.5 L9.5,10.5 L8.5,10.5 L8.5,3.5 Z M8.5,12.5 L9.5,12.5 L9.5,13.5 L8.5,13.5 L8.5,12.5 Z" id="Combined-Shape" fill-opacity="0.84" fill="#000000"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

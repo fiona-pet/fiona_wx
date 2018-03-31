@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-baoxiu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="服务单-用户" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-263.000000, -373.000000)">
+            <g id="Group-3-Copy-2" transform="translate(24.000000, 341.000000)">
+                <g id="ico-baoxiu" transform="translate(239.000000, 32.000000)">
+                    <circle id="Oval" fill="#EF9721" cx="28" cy="28" r="28"></circle>
+                    <path d="M31.9272172,26.9774783 C33.3666667,23.5798487 32.7022493,19.5028535 29.9325797,16.7332196 C27.1629101,13.9635856 23.0859527,13.2991316 19.6883241,14.7385815 L24.1578288,19.2080875 C25.0690694,20.1193284 25.0690329,21.5967315 24.1578288,22.5079358 L22.5079417,24.1578599 C21.5967011,25.0690643 20.1193349,25.0691007 19.2080945,24.1578599 L14.7385897,19.6882809 C13.2991402,23.0858741 13.9635576,27.1628692 16.7332272,29.9325031 C19.5028968,32.7021371 23.5798542,33.3666276 26.9774828,31.9271777 L36.366826,41.3165967 C37.2780301,42.2278011 38.7554327,42.2278011 39.6666733,41.3165967 L41.3165969,39.6666726 C42.227801,38.7554318 42.227801,37.2780287 41.3165969,36.3668244 L31.9272172,26.9774783 Z" id="Shape" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

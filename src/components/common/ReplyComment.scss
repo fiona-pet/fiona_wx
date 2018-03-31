@@ -1,0 +1,18 @@
+.ReplyComment {
+  .ReplyComment_Body {
+    background-color: white;
+    padding: 10px;
+  }
+  .weui-textarea {
+    height: 300px;
+    overflow: hidden;
+    overflow-y:scroll;
+  }
+  .page-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}

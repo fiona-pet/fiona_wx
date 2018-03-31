@@ -1,0 +1,61 @@
+.Login {
+  background-color: #fff;
+  height: 100%;
+  .page-logo {
+    padding: 40px 20px 8px 20px;
+    text-align: center;
+  }
+
+  .weui_cells {
+    margin-top: 0;
+  }
+  .weui-cells:before{
+    border-top:none;
+  }
+  .weui-cells:after{
+    border-bottom:none;
+  }
+  .weui-cell{
+    height: 40px;
+    padding:8px 8px;
+  }
+  .weui-cell:before{
+    transform: scaleY(0.5) scaleX(0.95);
+  }
+
+  .icon-img {
+    display: block;
+    width: 24px;
+    margin-right: 0.55em;
+  }
+
+  .weui_btn_area {
+    margin-top: 50px;
+  }
+  .no-weui-footer {
+    width: 100%;
+    text-align: center;
+    font-size: 6px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .weui_btn_primary:hover {
+    background-color: #338baa;
+  }
+  .weui-btn{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .weui_btn_primary {
+    color: white;
+    border: none;
+    background-color: #338bdb;
+    height: 48px
+  }
+
+  .lastFormCell{
+    height: 0px;
+  }
+
+}

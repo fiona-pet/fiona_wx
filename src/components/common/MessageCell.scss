@@ -1,0 +1,35 @@
+.MessageCell {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 0 24px;
+  background-color: rgba(234, 234, 234, 0.5);
+
+  .accessCell {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .48);;
+    background-color: #FFFFFF;
+    padding: 10px 12px;
+  }
+  .time {
+    display: inline-block;
+    align-self: center;
+    background-color: #C1C1C1;
+    border-radius: 4px;
+    padding: 3px 12px 4px 12px;
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+  .content {
+    word-break: break-all;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, .48);
+    border: 0 solid #D9D9D9;
+    border-radius: 2px 2px 0 0;
+    font-size: 16px;
+    margin-top: 12px;
+    padding: 12px;
+    &.unread {
+      color: rgba(0, 0, 0, .84);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.DynamicButtonCell{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index:1000;
+
+	.weui-form-preview__ft:before{
+		display: none;
+	}
+	.weui-form-preview:before{
+		display: none;	
+	}
+	.weui-form-preview:after{
+		display: none;
+	}
+	.weui-form-preview{
+		background: transparent;
+		border-width: 10px;
+		border-color:red;
+	}
+  .weui-form-preview__btn_default{
+  	background-color: #2C7AC0;
+  	color: #FFF;
+  	border-color: transparent;
+  	border-width: 0px;
+  	border-radius: 5px;
+  	margin: 4px;
+  }
+}

@@ -1,0 +1,31 @@
+.asset-search {
+  background-color: #eee;
+  .weui-cells {
+    background-color: #eee;
+  }
+  .weui-panel {
+    margin-top: 8px;
+  }
+  .wrapper {
+    margin-top: 50px;
+  }
+  .main {
+    text-align: center;
+
+    img {
+      width: 112px;
+      height: 112px;
+      margin-top: 80px;
+    }
+
+    .desc {
+      margin-top: 16px;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+
+  .weui-panel__hd:after{
+    left: 0;
+  }
+}

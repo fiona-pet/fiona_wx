@@ -1,0 +1,42 @@
+.WorkSheetCell {
+  font-size: 14px;
+  img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+  .weui-cell__bd {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .weui-cell__hd {
+    height: 23px;
+    margin-right: 12px;
+    color: rgba(0,0,0, 0.48);
+  }
+  .weui-cell__ft {
+    color: rgba(0,0,0, 0.28);
+  }
+  .weui-panel__hd {
+    .weui-cell__bd {
+      font-size: 16px;
+      color:rgba(0,0,0, 0.84)
+    }
+    .weui-cell__ft {
+      color: #E75C20;
+      font-size: 14px;
+    }
+
+    padding: 0;
+  }
+  .weui-panel__bd{
+    .weui-cell__hd {
+      width: 64px;
+    }
+  }
+  .weui-cell:before {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.SearchHeader {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  background: #FFFFFF;
+  height: 44px;
+  .weui-search-bar__form {
+    border-radius: 5px;
+  }
+  .weui-search-bar {
+    background-color: #FFFFFF;
+  }
+  .weui-search-bar__label {
+    background-color: #EEEEEE;
+    padding-left: 8px;
+  }
+  .toolbar-icon {
+    height: 46px;
+  }
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #EEEEEE;
+}

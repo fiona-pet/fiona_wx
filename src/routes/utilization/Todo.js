@@ -274,7 +274,7 @@ class Todo extends React.Component {
                                     radio
                                     onClick={this.goTroubleRepairing.bind(this)}
                                 >
-                                    <CellHeader><img className="image" src={trouble}/></CellHeader>
+                                    <CellHeader><img className="image" src={service}/></CellHeader>
                                     <CellBody>美容</CellBody>
                                     <CellFooter>
                                         <Radio name="typeIndex"/>
@@ -286,7 +286,7 @@ class Todo extends React.Component {
                                     radio
                                     onClick={this.goServiceRequest.bind(this)}
                                 >
-                                    <CellHeader><img className="image" src={service}/></CellHeader>
+                                    <CellHeader><img className="image" src={trouble}/></CellHeader>
                                     <CellBody>诊疗</CellBody>
                                     <CellFooter>
                                         <Radio name="typeIndex"/>

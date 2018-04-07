@@ -3,6 +3,8 @@
  */
 import React from 'react'
 import './SubmitFrom.scss'
+import '../../components/common/cells/TextCell/TextCell.scss'
+import '../../components/common/DynamicCells.scss'
 import {
     Icon,
     ButtonArea,
@@ -25,6 +27,7 @@ import {
     GalleryDelete,
     Dialog,
 } from 'react-weui/build/packages';
+import TextCell from '../../components/common/cells/TextCell/TextCell'
 import DynamicCells from '../../components/common/DynamicCells'
 import Uploader from '../../components/common/Uploader'
 import {
@@ -98,63 +101,7 @@ class SubmitFrom extends React.Component {
         }
     }
 
-    componentDidMount() {
-        let params = this.props.match.params;
-        this.catalogId = params.catalogId;
-        this.processId = params.processId;
-        this.catalogName = params.catalogName;
-        this.getNodeId();
-        this.getWorkOrderType();
-        this.getOrderId();
-        this.loadDynamicButtons()
-    }
-
-    getWorkOrderType() {
-        getWorkOrderType(this.processId).then(res => {
-            let obj = JSON.parse(res);
-            this.workOrderType = obj.result.workorder_type.id;
-        })
-    }
-
-    getOrderId() {
-        getOrderId().then(res => {
-            let obj = JSON.parse(res);
-            this.orderId = obj.result;
-            this.loadDynamicViews(this.catalogId, this.orderId);
-        })
-    }
-
-    getNodeId() {
-        getNodeId(this.catalogId).then(res => {
-            let obj = JSON.parse(res);
-            this.nodeId = obj.result;
-        });
-    }
-
-    loadDynamicButtons() {
-        getNodeByServiceCatalog(this.catalogId).then(res => {
-            let obj = JSON.parse(res);
-            if (typeof obj.error === 'object') {
-                return
-            }
-            if (obj.result) {
-                this.setState({dynamicButtons: obj.result})
-            }
-        });
-    }
-
-    loadDynamicViews(serviceId, orderId) {
-        WorkSheetModel.getFormsByCatalog(serviceId, "apply", {"create_user": null, "id": orderId}, (result, components, rules, ciTypes) => {
-            this.rules = rules;
-            this.ciTypes = ciTypes;
-            console.log(components);
-            this.setState({components: components});
-            if (this.ciTypes[0] === FAULT_CI_TYPE) {
-                this.setState({isUploaderShown: true})
-            }
-        })
-    }
-
+    
     showAlert(msg) {
         this.setState({
             showAlert: true,
@@ -165,51 +112,12 @@ class SubmitFrom extends React.Component {
     hideAlert() {
         this.setState({showAlert: false});
     }
-    searchChange(value) {
-        if (!this.state.lookup_popUp && !this.state.multi_lookup_popUp) return;
-        this.pageIndex = 1;
-        WorkSheetModel.loadLookUpData([], this.state.selectedItem, value, this.pageIndex, (allData, resIndex) => {
-            this.allData = allData;
-            this.pageIndex = resIndex;
-            if (this.state.selectedItem.editor == 'userselector' || this.state.selectedItem.editor == 'roleselector') {
-                this.setState({multi_lookup_popUp: true, lookUpDataSource: allData});
-            } else {
-                this.setState({lookup_popUp: true, lookUpDataSource: allData});
-            }
-        })
-    }
+    
     cellClick(popUpProps) {
         this.setState({...popUpProps});
     }
-    onLoadMore(resolve, finish) {
-        WorkSheetModel.loadLookUpData(this.allData, this.state.selectedItem, '', this.pageIndex, (allData, resIndex) => {
-            this.allData = allData;
-            this.pageIndex = resIndex;
-            this.setState({lookUpDataSource: allData});
-            resolve()
-        }, finish)
-    }
-
-    // 动态列表选择页面的取消
-    handleCancelClick() {
-        this.setState({
-            lookup_popUp: false,
-            multi_lookup_popUp: false,
-            replyComment: false,
-        })
-    }
-
-    // 动态列表选择页面的确定
-    handleOKClick(item) {
-        this.setState({lookup_popUp: false, multi_lookup_popUp: false});
-        WorkSheetModel.setComponentsValue(this.state.components, item, this.state.selectedItem.id);
-        WorkSheetModel.changeComponentsRule(this.state.components, this.rules, this.ciTypes, this.state.selectedItem.name, this.orderId, (components) => {
-            this.setState({components:components})
-        });
-    }
-    defaultSelected() {
-        return this.state.selectedItem.defaultId
-    }
+    
+  
     buttonClick(title, index) {
         let action = this.state.dynamicButtons[index];
         let actionId = action.id;
@@ -242,54 +150,9 @@ class SubmitFrom extends React.Component {
         });
     }
 
-    uploadFile(file) {
-        this.props.showMessage("正在上传", "info");
-        upload(file.data, this.orderId).then(res => {
-            let obj = {"url":  res.url, "id": res.id};
-            let newFiles = [...this.state.demoFiles, obj];
-            this.setState({
-                demoFiles: newFiles
-            });
-        });
-    }
-
-    deleteFile(index) {
-        let file = this.state.demoFiles[index];
-        deleteFile(file.id).then(res => {
-            this.setState({
-                demoFiles: this.state.demoFiles.filter((e, i) => i != index),
-                gallery: false
-            })
-        })
-    }
-
-    renderGallery() {
-        if (!this.state.gallery) return false;
-        let src = this.state.demoFiles.map(file => file.url);
-
-        return (
-            <Gallery
-                src={src}
-                show
-                defaultIndex={this.state.gallery.index}
-                onClick={ e => {
-                    //avoid click background item
-                    e.preventDefault()
-                    e.stopPropagation();
-                    this.setState({gallery: false})
-                }}
-            >
-
-                <GalleryDelete onClick={ (e, index) => {
-                    this.deleteFile(index)
-                }}/>
-
-            </Gallery>
-        )
-    }
 
     render() {
-        let titles = [];
+        let titles = ['提交','取消'];
         this.state.dynamicButtons.map(item => {
             titles.push(item.display_name)
         });
@@ -305,12 +168,11 @@ class SubmitFrom extends React.Component {
             cellClick:this.cellClick.bind(this)
         };
         return <div className="SubmitFrom">
-            { this.renderGallery() }
             <Page className={titles.length > 4 ? "container2" : "container1"}>
                 <CellsTitle>
                     <Cell>
                         <CellHeader>
-                            填写工单信息
+                            预约信息
                         </CellHeader>
                         <CellBody>
                         </CellBody>
@@ -319,54 +181,89 @@ class SubmitFrom extends React.Component {
                         </CellFooter>
                     </Cell>
                 </CellsTitle>
-                <DynamicCells {...dynamicCellsProps}/>
-                <Cells>
-                    {this.state.isUploaderShown ?
-                        <Cell>
-                            <CellBody>
-                                <Uploader
-                                    title="上传附件"
-                                    maxCount={6}
-                                    files={this.state.demoFiles}
-                                    onError={msg => this.showAlert(msg)}
-                                    onChange={(file, e) => {
-                                        console.log(file)
-                                        this.uploadFile(file)
-                                    }}
-                                    onFileClick={
-                                        (e, file, i) => {
-                                            this.setState({
-                                                gallery: {url: file.url, id: file.id, index: i}
-                                            })
-                                        }
-                                    }
-                                    lang={{
-                                        maxError: maxCount => `最多上传${maxCount}张图片`
-                                    }}
-                                />
-                            </CellBody>
-                        </Cell> : ''}
-                </Cells>
+                <div className="DynamicCells">
+                    <Cells>
+                        <FormCell className="TextCell" select selectPos="after">
+                          <CellHeader>
+                              <div className="cell_body_head">
+                                  <span className="isRequire">*</span>
+                              </div>
+                              <div  className="cell_body_content">
+                                  类型
+                              </div>
+                          </CellHeader>
+                          <CellBody>
+                               <Select data={[
+                                {
+                                    value: 1,
+                                    label: '美容'
+                                },
+                                {
+                                    value: 2,
+                                    label: '诊疗'
+                                }
+                            ]} />
+                          </CellBody>
+                          <CellFooter>
+                          </CellFooter>
+                      </FormCell>
+                        <FormCell className="TextCell" select selectPos="after">
+                          <CellHeader>
+                              <div className="cell_body_head">
+                                  <span className="isRequire">*</span>
+                              </div>
+                              <div  className="cell_body_content">
+                                  爱宠
+                              </div>
+                          </CellHeader>
+                          <CellBody>
+                               <Select data={[
+                                {
+                                    value: 1,
+                                    label: '小白'
+                                },
+                                {
+                                    value: 2,
+                                    label: '小黑'
+                                },
+                                {
+                                    value: 3,
+                                    label: '小小'
+                                }
+                            ]} />
+                          </CellBody>
+                          <CellFooter>
+                          </CellFooter>
+                      </FormCell>
+                      <FormCell>
+                        <CellHeader>
+                            <Label>时间</Label>
+                        </CellHeader>
+                        <CellBody>
+                            <Input type="datetime-local" defaultValue="" placeholder=""/>
+                        </CellBody>
+                    </FormCell>
+                    <FormCell select selectPos="before">
+                        <CellHeader>
+                            <Select>
+                                <option value="1">+86</option>
+                            </Select>
+                        </CellHeader>
+                        <CellBody>
+                            <Input type="tel" placeholder="输入电话" value="15801632955"/>
+                        </CellBody>
+                    </FormCell>
+                    <FormCell>
+                        <CellBody>
+                            <TextArea placeholder="备注" rows="3" maxlength="200"></TextArea>
+                        </CellBody>
+                    </FormCell>
+                    </Cells>
+                </div>
             </Page>
 
             <DynamicButton {...dynamicButtonsProps}/>
-            <Dialog buttons={this.state.alert.buttons} show={this.state.showAlert}>
-                {this.state.alert.content}
-            </Dialog>
-            <SingleSelect show={this.state.lookup_popUp} dataSource={this.state.lookUpDataSource}
-                          handleOKClick={this.handleOKClick.bind(this)}
-                          handleCancelClick={this.handleCancelClick.bind(this)}
-                          searchChange={this.searchChange.bind(this)}
-                          onLoadMore={this.onLoadMore.bind(this)}
-                          defaultValue={this.defaultSelected()}
-            />
-            <MultiSelect show={this.state.multi_lookup_popUp} dataSource={this.state.lookUpDataSource}
-                         handleOKClick={this.handleOKClick.bind(this)}
-                         handleCancelClick={this.handleCancelClick.bind(this)}
-                         searchChange={this.searchChange.bind(this)}
-                         onLoadMore={this.onLoadMore.bind(this)}
-                         defaultValue={this.defaultSelected()}
-            />
+            
         </div>
     }
 }

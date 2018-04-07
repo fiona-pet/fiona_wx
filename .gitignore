@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-
+.DS_Store
 # Log file
 *.log
 
@@ -9,7 +9,8 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+dist/
+node_modules/
 # Package Files #
 *.jar
 *.war

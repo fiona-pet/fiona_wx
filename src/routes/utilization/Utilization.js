@@ -105,9 +105,9 @@ class Utilization extends React.Component {
                     </CellHeader>
                     <CellBody>
                         <div className="item-hd">
-                            <div className="type">我的待办</div>
+                            <div className="type">预约</div>
                         </div>
-                        <div className="content">需要您办理的服务单</div>
+                        <div className="content">需要您赴约的服务单</div>
                     </CellBody>
                     <CellFooter>
                         {this.state.todoNum == 0 ? '' : this.state.todoNum}
@@ -119,45 +119,15 @@ class Utilization extends React.Component {
                     </CellHeader>
                     <CellBody>
                         <div className="item-hd">
-                            <div className="type">服务跟踪</div>
+                            <div className="type">爱宠</div>
                         </div>
-                        <div className="content">查看您办理过的所有服务单</div>
+                        <div className="content">查看您绑定的所有爱宠</div>
                     </CellBody>
                     <CellFooter>
                         {this.state.serviceNum == 0 ? '' : this.state.serviceNum}
                     </CellFooter>
                 </Cell>
-                <Cell access onClick={this.goAssetManage.bind(this)}>
-                    <CellHeader>
-                        <img src={asset}/>
-                    </CellHeader>
-                    <CellBody>
-                        <div className="item-hd">
-                            <div className="type">资产管理</div>
-                        </div>
-                        <div className="content">资产的扫描查询等业务</div>
-                    </CellBody>
-                    <CellFooter>
-                        {this.state.assetNum == 0 ? '' : this.state.assetNum}
-                    </CellFooter>
-                </Cell>
-                {this.state.isEnable ?
-                    <Cell access onClick={this.goMonthlyReport.bind(this)}>
-                        <CellHeader>
-                            <img src={rectagnle}/>
-                        </CellHeader>
-                        <CellBody>
-                            <div className="item-hd">
-                                <div className="type">微信月报</div>
-                            </div>
-                            <div className="content">查看上月服务相关数据</div>
-                        </CellBody>
-                        <CellFooter>
-
-                        </CellFooter>
-                    </Cell>
-                    : ''
-                }
+                
                 <Cell className="lastCell">
                 </Cell>
             </Cells>
@@ -169,8 +139,8 @@ class Utilization extends React.Component {
             >
                 <div style={{height: '100vh', overflow: 'scroll'}}>
                     <div id="floatMenuList" className="menu-list">
-                        <a href="#/serviceRequest" className="link-home">服务请求</a>
-                        <a href="#/troubleRepairing" className="link-my">故障报修</a>
+                        <a href="#/serviceRequest" className="link-home">美容</a>
+                        <a href="#/troubleRepairing" className="link-my">诊疗</a>
                     </div>
                 </div>
             </Popup>

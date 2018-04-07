@@ -116,10 +116,10 @@ class Profile extends React.Component {
                     </CellHeader>
                     <CellBody>
                         <div className="profileTitle">
-                            <p className="name">{this.state.name}</p>
+                            <p className="name">张女士</p>
                             <img src={this.state.sex === '男' ? male : female}/>
                         </div>
-                        <p className="department">{this.state.dept}</p>
+                        <p className="department">普通会员</p>
                     </CellBody>
                     <CellFooter/>
                 </Cell>
@@ -136,26 +136,7 @@ class Profile extends React.Component {
 
                     </CellFooter>
                 </Cell>
-                <Cell>
-                    <CellBody>邮箱</CellBody>
-                    <CellFooter>{this.placeHolder(this.state.email)}</CellFooter>
-                </Cell>
             </Cells>
-
-            {Auth.getUserType() == 1 && this.state.isMonthlyConfigShown ?
-                <Cells>
-                    <Cell access onClick={e => {
-                        e.preventDefault()
-                        this.props.history.push('/selectdate');
-                    }}>
-                        <CellBody>
-                            微信历史月报
-                        </CellBody>
-                        <CellFooter/>
-                    </Cell>
-                </Cells> :
-                ''
-             }
 
             <Cells className="logout-cells">
                 <Cell className="logout-cell" onClick={this.showDialog.bind(this)}>

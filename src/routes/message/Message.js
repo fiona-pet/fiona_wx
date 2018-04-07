@@ -90,54 +90,12 @@ class Message extends React.Component {
                     </CellHeader>
                     <CellBody>
                         <div className="item-hd">
-                            <div className="type">服务单</div>
+                            <div className="type">活动优惠</div>
                             <div className="time">{this.state.messageServicesNum == 0
                                 ? ""
                                 : DateUtil.dateStringFormat(this.state.messageServicesTime)}</div>
                         </div>
-                        <div className="content">{this.state.messageServicesNum == 0
-                            ? "暂无消息"
-                            : this.state.messageServicesDigest}</div>
-                    </CellBody>
-                    <CellFooter>
-                    </CellFooter>
-                </Cell>
-                <Cell onClick={this.toAssetMessage.bind(this)}>
-                    <CellHeader>
-                        <img src={msg_asset}/>
-                        {this.state.messageAssetNum == 0 ? null :
-                            <Badge>{this.state.messageAssetNum > 99 ? '99+' : this.state.messageAssetNum}</Badge>}
-                    </CellHeader>
-                    <CellBody>
-                        <div className="item-hd">
-                            <div className="type">资产</div>
-                            <div className="time">{this.state.messageAssetNum == 0
-                                ? ""
-                                : DateUtil.dateStringFormat(this.state.messageAssetTime)}</div>
-                        </div>
-                        <div className="content">{this.state.messageAssetNum == 0
-                            ? "暂无消息"
-                            : this.state.messageAssetDigest}</div>
-                    </CellBody>
-                    <CellFooter>
-                    </CellFooter>
-                </Cell>
-                <Cell onClick={this.toMonthlyMessage.bind(this)}>
-                    <CellHeader>
-                        <img src={msg_monthly}/>
-                        {this.state.messageMonthlyNum == 0 ? null :
-                            <Badge>{this.state.messageMonthlyNum > 99 ? '99+' : this.state.messageMonthlyNum}</Badge>}
-                    </CellHeader>
-                    <CellBody>
-                        <div className="item-hd">
-                            <div className="type">微信月报</div>
-                            <div className="time">{this.state.messageMonthlyNum == 0
-                                ? ""
-                                : DateUtil.dateStringFormat(this.state.messageMonthlyTime)}</div>
-                        </div>
-                        <div className="content">{this.state.messageMonthlyNum == 0
-                            ? "暂无消息"
-                            : this.state.messageMonthlyDigest}</div>
+                        <div className="content">暂无消息</div>
                     </CellBody>
                     <CellFooter>
                     </CellFooter>

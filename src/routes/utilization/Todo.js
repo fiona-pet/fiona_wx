@@ -103,11 +103,11 @@ class Todo extends React.Component {
     }
 
     goServiceRequest() {
-        this.props.history.push('/serviceRequest');
+        this.props.history.push('/submit');
     }
 
     goTroubleRepairing() {
-        this.props.history.push('/troubleRepairing');
+        this.props.history.push('/submit');
     }
 
     hideFilterPopup() {
@@ -152,7 +152,10 @@ class Todo extends React.Component {
 
     getData(statusType, pageIndex) {
         UtilizationModel.getTodoList(statusType, pageIndex, this.state.searchText, (result, resIndex) => {
-            let data = result.data;
+            let data = [{title:'小白美容', type:'美容', flow_status:'受理中', apply_description:'请安排美容师周维杰',apply_user:'前台',create_time:1522738172435,priority:''},
+            {title:'小白美容', type:'美容', flow_status:'取消', apply_description:'临时有事改期',apply_user:'前台',create_time:1522738172435,priority:''},
+            {title:'小黑疫苗', type:'诊疗', flow_status:'受理', apply_description:'请安排张院长受理',apply_user:'张雪光',create_time:1522738172435,priority:''},
+            {title:'小白美容', type:'美容', flow_status:'完成', apply_description:'请安排美容师周围杰',apply_user:'周维杰',create_time:1522738172435,priority:'好'}];
             if (pageIndex != 1) {
                 data = this.state.data.concat(data);
             }
@@ -229,7 +232,7 @@ class Todo extends React.Component {
                             <Form radio>
                                 <FormCell
                                     radio onClick={this.handleRadioClick.bind(this, this.state.statusTypes[1], 1)}>
-                                    <CellBody>故障{"(" + this.state.faultNum + ")"}</CellBody>
+                                    <CellBody>美容{"(" + this.state.faultNum + ")"}</CellBody>
                                     <CellFooter>
                                         <Radio name="typeIndex" defaultChecked={1 === typeIndex}/>
                                     </CellFooter>
@@ -238,7 +241,7 @@ class Todo extends React.Component {
                             <Form radio>
                                 <FormCell
                                     radio onClick={this.handleRadioClick.bind(this, this.state.statusTypes[2], 2)}>
-                                    <CellBody>请求{"(" + this.state.requestNum + ")"}</CellBody>
+                                    <CellBody>诊疗{"(" + this.state.requestNum + ")"}</CellBody>
                                     <CellFooter>
                                         <Radio name="typeIndex" defaultChecked={2 === typeIndex}/>
                                     </CellFooter>
@@ -272,7 +275,7 @@ class Todo extends React.Component {
                                     onClick={this.goTroubleRepairing.bind(this)}
                                 >
                                     <CellHeader><img className="image" src={trouble}/></CellHeader>
-                                    <CellBody>故障报修</CellBody>
+                                    <CellBody>美容</CellBody>
                                     <CellFooter>
                                         <Radio name="typeIndex"/>
                                     </CellFooter>
@@ -284,7 +287,7 @@ class Todo extends React.Component {
                                     onClick={this.goServiceRequest.bind(this)}
                                 >
                                     <CellHeader><img className="image" src={service}/></CellHeader>
-                                    <CellBody>服务申请</CellBody>
+                                    <CellBody>诊疗</CellBody>
                                     <CellFooter>
                                         <Radio name="typeIndex"/>
                                     </CellFooter>
@@ -306,19 +309,19 @@ class Todo extends React.Component {
             <ScrollView onDown={this.refresh.bind(this)} onUp={this.loadMore.bind(this)}>
                 <Cells>
                     {this.state.data.length ? this.state.data.map((item, index) => (
-                            <WorkSheetCell title={item.service_catalog ? item.service_catalog.display_name : "no title"}
-                                           type={(item.classify.id == 1) ? 'trouble' : 'service'}
-                                           state={item.flow_status ? item.flow_status.display_name : "no state"}
+                            <WorkSheetCell title={item.title}
+                                           type={item.type}
+                                           state={item.flow_status}
                                            describe={item.apply_description}
-                                           engineer={item.apply_user ? item.apply_user.display_name : "no engineer"}
+                                           engineer={item.apply_user}
                                            time={DataUtil.dateStringFormat(item.create_time)}
                                            onClick={this.goDetail.bind(this, item)} key={index}
-                                           priority={item.priority_group ? item.priority_group.display_name ? item.priority_group.display_name : '' : ''}
+                                           priority={item.priority}
                             />
                         )) : <Empty
                         show={this.state.emptyShow}
                         src={'order'}
-                        remind={'暂无工单'}/>}
+                        remind={'暂无预约'}/>}
                 </Cells>
                 <div style={this.state.data.length <= 6 ? {height:'22px'} : {height:'0px'}}></div>
             </ScrollView>

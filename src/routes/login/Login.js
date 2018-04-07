@@ -133,7 +133,7 @@ class Login extends React.Component {
         return (
             <div className="Login">
                 <div className="page-logo">
-                    <img src={require('../../../asset/login/logo.svg')}/>
+                    <img src={require('../../../asset/login/logo.png')}/>
                 </div>
                 <form onSubmit={this.handleFormSubmit.bind(this)}>
                     <Form>
@@ -175,7 +175,7 @@ class Login extends React.Component {
                 <br/>
 
                 <Footer>
-                    <FooterText>Relax V1.1.129</FooterText>
+                    <FooterText>Fiona V1.0.0</FooterText>
                 </Footer>
 
                 <Toast icon="loading" show={this.state.loading}>登录中...</Toast>

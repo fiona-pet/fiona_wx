@@ -24,19 +24,19 @@ function WorkSheetCell(props) {
         <PanelHeader>
             <Cell>
                 <CellHeader>
-                    <img src={props.type == 'trouble' ? trouble : service}/>
+                    <img src={props.type == '诊疗' ? trouble : service}/>
                 </CellHeader>
                 <CellBody>
                     {props.title}
                 </CellBody>
-                {Auth.getUserType() == 0 ? '' :
-                    <CellFooter>
-                        <label style={getLevel(props.priority)}>
-                            {props.priority}
-                        </label>
-                    </CellFooter>
+                
+                <CellFooter>
+                    <label style={getLevel(props.priority)}>
+                        {props.priority}
+                    </label>
+                </CellFooter>
 
-                }
+                
                 <div>&nbsp;&nbsp;</div>
                 <CellFooter>
                     {props.state}
@@ -46,7 +46,7 @@ function WorkSheetCell(props) {
         <PanelBody>
             <Cell>
                 <CellHeader>
-                    {props.type == 'trouble' ? '故障描述' : '请求描述'}
+                    {props.type == 'trouble' ? '备注' : '备注'}
                 </CellHeader>
                 <CellBody>
                     {props.describe}
@@ -57,7 +57,7 @@ function WorkSheetCell(props) {
             </Cell>
             <Cell>
                 <CellHeader>
-                    {Auth.getUserType() == 0 ? '处理人' : '申请人'}
+                    处理人
                 </CellHeader>
                 <CellBody>
                     {props.engineer}
@@ -75,7 +75,7 @@ function getLevel(name) {
     let textColor = "#fff";
 
     switch (name) {
-        case "高":
+        case "差":
             color = "#Fcf0f0";
             textColor = "#e78888";
             break;
@@ -83,7 +83,7 @@ function getLevel(name) {
             color = "#fdf5eb";
             textColor = "#f3b05c";
             break;
-        case "低":
+        case "好":
             name = "主要";
             color = "#f7f3eb";
             textColor = "#94b747";

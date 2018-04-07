@@ -78,7 +78,7 @@ export default function (env) {
                 },
                 proxy: {
                     "/rpc": {
-                        target: "http://222.82.233.138:9091/relax",// "http://172.17.161.7:9090/relax"//172.17.189.18
+                        target: "http://rmc.ruijie.com.cn/relax/test-33"//172.17.189.18
                     }
                 }
             },
